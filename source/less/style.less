@@ -1,4 +1,43 @@
-@import "variables.less";
-@import "blocks/page-header.less";
+@import "helpers/normalize.less";
+@import "helpers/variables.less";
+@import "helpers/fonts.less";
+@import "helpers/mixins.less";
 
-body { background: white; }
+@import "blocks/page-header.less";
+@import "blocks/main-nav.less";
+@import "blocks/main-info.less";
+@import "blocks/advantages.less";
+@import "blocks/choose-program.less";
+@import "blocks/contacts.less";
+@import "blocks/copyright.less";
+@import "blocks/page-footer.less";
+@import "blocks/real-example.less";
+@import "blocks/social.less";
+@import "blocks/catalog.less";
+@import "blocks/show-more.less";
+@import "blocks/extra.less";
+@import "blocks/order-all.less";
+@import "blocks/map.less";
+
+html {
+  box-sizing: border-box;
+  min-width: 320px;
+  min-height: 100%;
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: @bg-color;
+}
