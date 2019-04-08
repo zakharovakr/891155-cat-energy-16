@@ -3,6 +3,7 @@
       <head>
         <meta charset="utf-8">
         <title>HTML Academy: Кэт энерджи</title>
+        <link rel="stylesheet" href="css/style.css">
       </head>
 
       <body>
@@ -10,7 +11,7 @@
           <header class="page-header">
             <div class="page-header__container">
               <a class="page-header__logo">
-                <img class="page-header__logo-image" src="placehold.it" width="#" height="#" alt="Кэт Энерджи">
+                <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Кэт Энерджи">
               </a>
               <nav class="main-nav">
                 <button class=" button main-nav__toggle" type="button">Открыть меню
@@ -18,13 +19,13 @@
                 <div class="main-nav__wrapper">
                   <ul class="main-nav__list">
                     <li class="main-nav__item">
-                      <a href="#">Главная</a>
+                      <a class="main-nav__link" href="#">Главная</a>
                     </li>
                     <li class="main-nav__item">
-                      <a href="#">Каталог продукции</a>
+                      <a class="main-nav__link" href="#">Каталог продукции</a>
                     </li>
                     <li class="main-nav__item">
-                      <a href="#">Подбор программы</a>
+                      <a class="main-nav__link" href="#">Подбор программы</a>
                     </li>
                   </ul>
                 </div>
@@ -33,65 +34,82 @@
           </header>
 
           <main>
-            <section class="form">
+            <form class="form" action="#" method="get">
               <div class="form__container">
-                <form class="form__form" action="#" method="get">
-                  <div class="form__cat-data">
-                    <label for="name" class="form__label">Имя:*
-                    </label>
-                    <input class="form__input" type="text" id="name" placeholder="Барсик">
-                    <label for="weight" class="form__label">Вес (кг):*
-                    </label>
-                    <input class="form__input" type="number" id="weight" placeholder="7">
-                    <label for="age" class="form__label">Возраст (лет):
-                    </label>
-                    <input class="form__input" type="number" id="age" placeholder="7">
-                  </div>
-                  <div class="form__plan">
-                    <input type="checkbox" id="lose-weight" checked>
-                    <label for="lose-weight">Похудение
-                    </label>
-                    <input type="checkbox" id="get-mass">Набор массы
-                    <label for="get-mass">
-                    </label>
-                    <input type="checkbox" id="dont-know">Не знаю (Нужен ваш совет)
-                    <label for="dont-know">
-                    </label>
-                  </div>
-                  <div class="form__contacts">
-                    <span class="form__contacts-title">Контактные данные (владельца кота)
-                    </span>
-                    <label for="email">E-mail:*
-                    </label>
-                    <input type="text" id="email" placeholder="kuklachev@gmail.com">
-                    <label for="phone">Телефон:*
-                    </label>
-                    <input type="text" id="phone" placeholder="8 (960) 900-60-90">
-                  </div>
-                  <div class="form__comment">
-                    <textarea class="comment-textarea" rows="6" cols="20" placeholder="Расскажите обо всех повадках кота">
-                    </textarea>
-                  </div>
-                  <div class="form__extra">
-                    <input type="checkbox" id="sweetener" checked>
-                    <label for="sweetener">Сахарозаменитель
-                    </label>
-                    <input type="checkbox" id="water">
-                    <label for="water">Питьевая вода
-                    </label>
-                    <input type="checkbox" id="milk">
-                    <label for="milk">Молоко
-                    </label>
-                    <input type="checkbox" id="vitamins">
-                    <label for="vitamins">Витамины
-                    </label>
-                  </div>
-                  <button type="button">Отправить заявку</button>
-                  <span class="form__must-fields">* — Обязательные поля
-                  </span>
-                </form>
-              </div>
-            </section>
+              <h1 class="form__title">Подбор программы</h1>
+              <p class="form__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
+
+              <fieldset class="form__fieldset">
+                <label class="field-text">
+                  <span class="field-text__text">Имя:*</span>
+                  <input class="field-text__input" type="text" placeholder="Барсик">
+                </label>
+                <label class="field-text">
+                  <span class="field-text__text">Вес (кг):*</span>
+                  <input class="field-text__input" type="number" placeholder="7">
+                </label>
+                <label class="field-text">
+                  <span class="field-text__text">Возраст (лет):</span>
+                  <input class="field-text__input" type="number" placeholder="7">
+                </label>
+              </fieldset>
+
+              <fieldset class="form__fieldset">
+                <label class="field-checkbox">
+                  <input class="field-checkbox__input" type="checkbox" checked>
+                  <span class="field-checkbox__text">Похудение</span>
+                </label>
+                <label class="field-checkbox">
+                  <input class="field-checkbox__input" type="checkbox">
+                  <span class="field-checkbox__text">Набор массы</span>
+                </label>
+                <label class="field-checkbox">
+                  <input class="field-checkbox__input" type="checkbox">
+                  <span class="field-checkbox__text">Не знаю (Нужен ваш совет)</span>
+                </label>
+              </fieldset>
+
+              <fieldset class="form__fieldset">
+                <legend class="form__legend">Контактные данные (владельца кота)</legend>
+                <label class="field-text">
+                  <span class="field-text__text">E-mail:*</span>
+                  <input class="field-text__input" type="email" placeholder="kuklachev@gmail.com">
+                </label>
+                <label class="field-text">
+                  <span class="field-text__text">Телефон:*</span>
+                  <input class="field-text__input" type="tel" placeholder="8 (960) 900-60-90">
+                </label>
+              </fieldset>
+
+              <fieldset class="form__fieldset">
+                <legend class="form__legend">Комментарий</legend>
+                <textarea class="form__textarea" rows="6" cols="20" placeholder="Расскажите обо всех повадках кота">
+                </textarea>
+              </fieldset>
+
+              <fieldset class="form__fieldset">
+                <legend class="form__legend">Дополнительно</legend>
+                <label class="field-checkbox">
+                  <input class="field-checkbox__input" type="checkbox" checked>
+                  <span class="field-checkbox__text">Сахарозаменитель</span>
+                </label>
+                <label class="field-checkbox">
+                  <input class="field-checkbox__input" type="checkbox">
+                  <span class="field-checkbox__text">Питьевая вода</span>
+                </label>
+                <label class="field-checkbox">
+                  <input class="field-checkbox__input" type="checkbox">
+                  <span class="field-checkbox__text">Молоко</span>
+                </label>
+                <label class="field-checkbox">
+                  <input class="field-checkbox__input" type="checkbox">
+                  <span class="field-checkbox__text">Витамины</span>
+                </label>
+
+              <button type="button">Отправить заявку</button>
+              <span class="form__must-fields">* — Обязательные поля</span>
+            </div>
+            </form>
           </main>
 
           <footer class="page-footer">
