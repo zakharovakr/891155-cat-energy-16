@@ -1,11 +1,40 @@
 .page-header {
-  font-size: @font-size-menu;
   color: @text-color1;
-  background-color: inherit;
+  background-color: yellow;
 }
 
 .page-header__container {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__container {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .page-header__logo {
+  height: 65px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__logo {
+    height: 83px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__logo {
+    height: 113px;
+  }
 }
