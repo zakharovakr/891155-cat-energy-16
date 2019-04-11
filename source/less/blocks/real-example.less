@@ -3,28 +3,23 @@
 }
 
 .real-example__container {
-  margin-left: 20px;
-  margin-right: 20px;
+  .container();
 }
 @media (min-width: @tablet-width) {
   .real-example__container {
-    margin-left: 30px;
-    margin-right: 30px;
+    //margin-left: 30px;
+    //margin-right: 30px;
   }
 }
 @media (min-width: @desktop-width) {
   .real-example__container {
-    margin-left: 110px;
-    margin-right: 110px;
+    //margin-left: 110px;
+    //margin-right: 110px;
   }
 }
 
 .real-example__title {
-  font-size: 36px;
-  line-height: 1.67;
-  color: #111111;
-  font-weight: normal;
-  text-align: left;
+  .section-title-mobile();
 }
 @media (min-width: @tablet-width) {
   .real-example__title {
