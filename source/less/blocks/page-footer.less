@@ -1,3 +1,16 @@
 .page-footer {
   background-color: #eaeaea;
 }
+
+.page-footer__container {
+  .container();
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: @tablet-width) {
+  .page-footer__container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
