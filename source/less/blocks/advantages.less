@@ -8,11 +8,10 @@
 
 .advantages__list {
   .list-reset();
-  display: flex;
-  flex-direction: column;
 }
 @media (min-width: @tablet-width) {
   .advantages__list {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -31,7 +30,7 @@
 }
 
 .advantages__description {
-  font-family: Arial;
+  font-family: @font-family-arial;
   font-size: 14px;
   line-height: 1.29;
 }
