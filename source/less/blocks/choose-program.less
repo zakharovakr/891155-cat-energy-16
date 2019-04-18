@@ -1,6 +1,11 @@
 .choose-program {
 
 }
+.choose-program__container {
+  .container();
+  margin-top: 20px; /*временно для отступов*/
+  margin-bottom: 12px; /*временно для отступов*/
+}
 
 .choose-program__list {
   .list-reset();
@@ -10,24 +15,25 @@
 @media (min-width: @desktop-width) {
   .choose-program__list {
     flex-direction: row;
+    justify-content:space-between;
   }
 }
 
 .choose-program__item {
-  margin: 20px;
   background-color: #eaeaea;
   min-height: 266px;
+  margin-bottom: 20px;
 }
 @media (min-width: @tablet-width) {
   .choose-program__item {
-    margin: 30px;
     min-height: 372px;
+    margin-bottom: 30px;
   }
 }
 @media (min-width: @desktop-width) {
   .choose-program__item {
-    width: 570px;
-    justify-content: space-around;
+    width: 47%;
+    margin-bottom: 0;
   }
 }
 
@@ -37,35 +43,64 @@
   font-weight: normal;
   color: #111111;
   text-transform: uppercase;
+  font-family: @font-family;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  margin-top: 39px;
+  margin-bottom: 36px;
 }
 @media (min-width: @tablet-width) {
   .choose-program__title {
     font-size: 36px;
     line-height: 1.03;
+    margin-top: 81px;
+    margin-left: 55px;
+    text-align: left;
+  }
+@media (min-width: @desktop-width) {
+  .choose-program__title {
+    margin-top: 81px;
+    margin-left: 0;
+    text-align: center;
   }
 }
 
 .choose-program__description {
-  font-family: Arial;
+  width: 80%;
+  margin-left: 21px;
+  margin-bottom: 44px;
+  font-family: @font-family-arial;
   font-size: 14px;
   line-height: 1.29;
 }
 @media (min-width: @tablet-width) {
   .choose-program__description {
+    width: 52%;
+    margin-left: 52px;
+    margin-bottom: 61px;
     font-size: 16px;
     line-height: 1.5;
   }
+@media (min-width: @desktop-width) {
+  .choose-program__description {
+    width: 81%;
+    margin-left: 52px;
+    margin-bottom: 61px;
+  }
 }
-
 .choose-program__link {
   .link-reset();
+  margin-left: 21px;
   font-size: 16px;
   line-height: 1;
   color: #111111;
   text-transform: uppercase;
+  font-family: @font-family;
 }
 @media (min-width: @tablet-width) {
   .choose-program__link {
     font-size: 20px;
+    margin-left: 52px;
   }
 }
