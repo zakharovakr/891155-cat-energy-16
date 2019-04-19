@@ -3,24 +3,14 @@
 }
 
 .contacts__container {
-  .container()
-}
-@media (min-width: @tablet-width) {
-  .contacts__container {
-    //margin-left: 30px;
-    //margin-right: 30px;
-  }
-}
-@media (min-width: @desktop-width) {
-  .contacts__container {
-    //margin-left: 110px;
-    //margin-right: 110px;
-  }
+  .container();
 }
 
 .contacts__text {
   display: flex;
   justify-content: space-between;
+  margin-top: 31px;
+  margin-bottom: 26px;
 }
 @media (min-width: @desktop-width) {
   .contacts__text {
@@ -34,7 +24,9 @@
   line-height: 1.25;
   color: #111111;
   text-transform: uppercase;
-  width: 155px;
+  font-family: @font-family;
+  width: 50%;
+  padding-right: 29px;
 }
 @media (min-width: @tablet-width) {
   .contacts__cooperation {
@@ -43,10 +35,10 @@
 }
 
 .contacts__address {
-  font-family: Arial;
+  font-family: @font-family-arial;
   font-size: 14px;
   line-height: 1.43;
-  width: 155px;
+  width: 50%;
 }
 @media (min-width: @tablet-width) {
   .contacts__address {

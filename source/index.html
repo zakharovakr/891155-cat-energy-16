@@ -13,12 +13,12 @@
           <a class="page-header__logo">
             <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Кэт Энерджи">
           </a>
-          <nav class="main-nav">
-            <button class=" button main-nav__toggle visually-hidden" type="button">Открыть меню
+          <nav class="main-nav main-nav--opened main-nav--nojs">
+            <button class=" button main-nav__toggle type="button"><span class="visually-hidden">Открыть меню</span>
             </button>
             <div class="main-nav__wrapper">
               <ul class="main-nav__list">
-                <li class="main-nav__item">
+                <li class="main-nav__item main-nav__item--active">
                   <a class="main-nav__link" href="#">Главная</a>
                 </li>
                 <li class="main-nav__item">
@@ -45,18 +45,20 @@
             </button>
           </section>
           <section class="choose-program">
+            <div class="choose-program__container">
+              <h2 class="visually-hidden">Выберите программу похудения</h2>
             <ul class="choose-program__list">
-              <li class="choose-program__item">
-                <h2 class="choose-program__title choose-program__title--slim">Похудение
-                </h2>
+              <li class="choose-program__item choose-program__item--slim">
+                <h3 class="choose-program__title choose-program__title--slim">Похудение
+                </h3>
                 <p class="choose-program__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
                 </p>
                 <a href="#"class="choose-program__link">Каталог Slim
                 </a>
               </li>
               <li class="choose-program__item">
-                <h2 class="choose-program__title choose-program__title--mass">Набор массы
-                </h2>
+                <h3 class="choose-program__title choose-program__title--mass">Набор массы
+                </h3>
                 <p class="choose-program__description">Заработать авторитет среди дворовых котов и даже собак?
     Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
                 </p>
@@ -68,22 +70,22 @@
         </section>
         <section class="advantages">
           <div class="advantages__container">
-            <h3 class="advantages__title">Как это работает
-            </h3>
+            <h2 class="advantages__title">Как это работает
+            </h2>
             <ul class="advantages__list">
-              <li class="advantages__item--healthy">
+              <li class="advantages__item advantages__item--healthy">
                 <p class="advantages__description">Функциональное питание содержит только полезные питательные вещества.
                 </p>
               </li>
-              <li class="advantages__item--powder">
+              <li class="advantages__item advantages__item--powder">
                 <p class="advantages__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
                 </p>
               </li>
-              <li class="advantages__item--food">
+              <li class="advantages__item advantages__item--food">
                 <p class="advantages__description">Замените один-два приема обычной еды на наше функциональное питание.
                 </p>
               </li>
-              <li class="advantages__item--quick">
+              <li class="advantages__item advantages__item--quick">
                 <p class="advantages__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
                 </p>
               </li>
@@ -92,8 +94,8 @@
         </section>
         <section class="real-example">
           <div class="real-example__container">
-            <h3 class="real-example__title">Живой пример
-            </h3>
+            <h2 class="real-example__title">Живой пример
+            </h2>
             <p class="real-example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
             </p>
             <div class="real-example__data">
@@ -134,6 +136,7 @@
           </div>
         </section>
         <section class="contacts">
+            <h2 class="visually-hidden">Наши контакты</h2>
           <div class="contacts__container">
             <div class="contacts__text">
               <span class="contacts__cooperation">приглашаем к сотрудничеству дилеров!

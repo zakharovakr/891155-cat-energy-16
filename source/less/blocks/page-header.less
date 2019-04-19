@@ -1,6 +1,6 @@
 .page-header {
   color: @text-color1;
-  background-color: yellow;
+  background-color: ;
 }
 
 .page-header__container {
@@ -10,6 +10,7 @@
 
 @media (min-width: @tablet-width) {
   .page-header__container {
+    .container();
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -17,24 +18,25 @@
 }
 
 @media (min-width: @desktop-width) {
-  .page-header__container {
-    display: flex;
-    flex-direction: row;
-  }
+
 }
 
 .page-header__logo {
   height: 65px;
+  padding-top: 10px;
+  padding-left: 20px;
 }
 
 @media (min-width: @tablet-width) {
   .page-header__logo {
     height: 83px;
+    width: 174px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .page-header__logo {
     height: 113px;
+    width: 50%;
   }
 }
