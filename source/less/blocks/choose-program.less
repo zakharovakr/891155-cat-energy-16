@@ -23,6 +23,22 @@
   background-color: #eaeaea;
   min-height: 266px;
   margin-bottom: 20px;
+  position: relative;
+}
+.choose-program__item::before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: #68b738;
+  position: absolute;
+  top: 22px;
+  left: 24px;
+}
+.choose-program__item--slim::before {
+  content: "";
+  background-image: url(../img/icon-cat-slim.svg);
 }
 @media (min-width: @tablet-width) {
   .choose-program__item {
@@ -58,6 +74,7 @@
     margin-left: 55px;
     text-align: left;
   }
+}
 @media (min-width: @desktop-width) {
   .choose-program__title {
     margin-top: 81px;
@@ -82,6 +99,7 @@
     font-size: 16px;
     line-height: 1.5;
   }
+}
 @media (min-width: @desktop-width) {
   .choose-program__description {
     width: 81%;
