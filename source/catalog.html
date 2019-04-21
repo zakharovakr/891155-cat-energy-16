@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="no-js">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Кэт энерджи</title>
+    <title>HTML Academy: Каталог Кэт энерджи</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/style.css">
   </head>
 
@@ -13,12 +15,12 @@
           <a class="page-header__logo">
             <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Кэт Энерджи">
           </a>
-          <nav class="main-nav">
-            <button class=" button main-nav__toggle visually-hidden" type="button">Открыть меню
+          <nav class="main-nav main-nav--opened main-nav--nojs">
+            <button class=" button main-nav__toggle type="button"><span class="visually-hidden">Открыть меню</span>
             </button>
             <div class="main-nav__wrapper">
               <ul class="main-nav__list">
-                <li class="main-nav__item">
+                <li class="main-nav__item main-nav__item--active">
                   <a class="main-nav__link" href="#">Главная</a>
                 </li>
                 <li class="main-nav__item">
@@ -40,23 +42,27 @@
             </h1>
             <ul class="catalog__list">
               <li class="catalog__item">
-                <img src="" class="catalog__img" alt="Cat Energy PRO 500 г">
-                <span class="catalog__description">Cat Energy PRO 500 г
+                <div class="catalog__item-wrapper">
+                  <img src="./img/chicken-small-mobile@1x.jpg" width="140" height="144" class="catalog__img" alt="Cat Energy PRO 500 г">
+                <div class="catalog__description">
+                  <span class="catalog__description-title">Cat Energy PRO 500 г
                 </span>
                 <table class="catalog__table">
                   <tr>
                     <td>Объем</td>
-                    <td>500 г</td>
+                    <td class="table-data-right">500 г</td>
                   </tr>
                   <tr>
                     <td>Вкус</td>
-                    <td>Курица</td>
+                    <td class="table-data-right">Курица</td>
                   </tr>
                   <tr>
                     <td>Цена</td>
-                    <td>700 Р</td>
+                    <td class="table-data-right">700 Р</td>
                   </tr>
                 </table>
+                </div>
+                </div>
                 <button class="button catalog__button" type="button">Заказать
                 </button>
               </li>
@@ -278,18 +284,18 @@
       <footer class="page-footer">
         <div class="page-footer__container">
           <a class="page-footer__logo">
-            <img class="page-foooter__logo-image" src="placehold.it" width="#" height="#" alt="Кэт Энерджи">
+            <img class="page-foooter__logo-image" src="./img/logo-footer.svg" width="128" height="24" alt="Кэт Энерджи">
           </a>
           <div class="social">
             <ul class="social__list">
               <li class="social__item">
-                <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+                <a class="social__link social__link--vk" href="https://vk.com/htmlacademy"><img src="./img/icon-vk-mobile.svg" alt="Мы в Вконтакте" width="22" height="12"></a>
               </li>
               <li class="social__item">
-                <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+                <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy"><img src="./img/icon-insta-mobile.svg" alt="Мы в Инстаграме" width="17" height="17"></a>
               </li>
               <li class="social__item">
-                <a class="social__link social__link--fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+                <a class="social__link social__link--fb" href="https://www.facebook.com/htmlacademy"><img src="./img/icon-fb-mobile.svg" alt="Мы в Фейсбуке" width="10" height="19"></a>
               </li>
             </ul>
           </div>
@@ -299,11 +305,9 @@
             <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
             </a>
             <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
-              <img src="#" alt="Логотип HTML-Академии">
+              <img src="./img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML-Академии">
             </a>
           </div>
         </div>
       </footer>
-    </div>
-  </body>
 </html>

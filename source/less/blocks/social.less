@@ -1,11 +1,30 @@
 .social {
+  height: 60px;
+  width: 100%;
+  border-top: solid 1px grey;
+  border-bottom: solid 1px rgb(102,102,102);
+}
 
+@media (min-width: @tablet-width) {
+  .social {
+    border: none;
+  }
 }
 
 .social__list {
   .list-reset();
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .social__link {
   .link-reset();
+}
+
+.social__link--instagram {
+  margin-left: 35px;
+  margin-right: 40px;
 }
