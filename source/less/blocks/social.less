@@ -1,8 +1,8 @@
 .social {
   height: 60px;
   width: 100%;
-  border-top: solid 1px grey;
-  border-bottom: solid 1px rgb(102,102,102);
+  border-top: solid rgba(17, 17, 17, 0.1) 1px;
+  border-bottom: solid rgba(17, 17, 17, 0.1) 1px;
 }
 
 @media (min-width: @tablet-width) {
@@ -22,6 +22,44 @@
 
 .social__link {
   .link-reset();
+}
+
+.social__svg {
+  fill: #666666;
+}
+
+@media (min-width: @tablet-width) {
+  .social__svg--vk {
+    width: 30px;
+    height: 16px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .social__svg--insta {
+    width: 23px;
+    height: 23px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .social__svg--fb {
+    width: 14px;
+    height: 28px;
+  }
+}
+
+.social__svg:hover {
+  fill: #68b738;
+}
+
+.social__svg:focus {
+  fill: #68b738;
+}
+
+.social__svg:active {
+  fill: #68b738;
+  opacity: 0.3;
 }
 
 .social__link--instagram {

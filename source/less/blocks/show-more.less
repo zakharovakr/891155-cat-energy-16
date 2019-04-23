@@ -1,13 +1,50 @@
+.show-more {
+  height: 210px;
+  margin-top: 15px;
+}
+
 .show-more__header {
+  font-family: @font-family;
   font-size: 16px;
   line-height: 1.25;
   color: #111111;
   text-transform: uppercase;
   font-weight: normal;
+  margin: 0;
+  padding: 0;
+  padding-top: 83px;
+  text-align: center;
+  padding-bottom: 11px;
+  position: relative;
+}
+
+.show-more__header::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/advantage-leaf@1x.png");
 }
 
 .show-more__description {
-  font-family: Arial;
+  font-family: @font-family-arial;
   font-size: 12px;
   line-height: 1.33;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  padding-bottom: 22px;
+}
+
+.show-more__button {
+  background-color: #f2f2f2;
+  font-size: 16px;
+  font-family: @font-family;
+  line-height: 1.25;
+  color: #444444;
+  text-transform: uppercase;
+  display: block;
+  width: 280px;
+  height: 40px;
+  text-align: center;
+  border: none;
+  margin: 0 auto;
 }

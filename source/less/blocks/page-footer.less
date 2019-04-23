@@ -4,15 +4,14 @@
 
 .page-footer__container {
   .container();
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 @media (min-width: @tablet-width) {
   .page-footer__container {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     height: 150px;
   }
 }
@@ -30,4 +29,3 @@
     justify-content: flex-start;
   }
 }
-

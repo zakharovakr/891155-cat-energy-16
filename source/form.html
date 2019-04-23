@@ -19,10 +19,10 @@
                 <div class="main-nav__wrapper">
                   <ul class="main-nav__list">
                     <li class="main-nav__item">
-                      <a class="main-nav__link" href="#">Главная</a>
+                      <a class="main-nav__link" href="./index.html">Главная</a>
                     </li>
                     <li class="main-nav__item">
-                      <a class="main-nav__link" href="#">Каталог продукции</a>
+                      <a class="main-nav__link" href="./catalog.html">Каталог продукции</a>
                     </li>
                     <li class="main-nav__item">
                       <a class="main-nav__link" href="#">Подбор программы</a>
@@ -114,19 +114,31 @@
 
           <footer class="page-footer">
             <div class="page-footer__container">
-              <a class="page-footer__logo">
-                <img class="page-foooter__logo-image" src="placehold.it" width="#" height="#" alt="Кэт Энерджи">
+              <a class="page-footer__logo" href="./index.html">
+                <img class="page-foooter__logo-image" src="./img/logo-footer.svg" width="128" height="24" alt="Кэт Энерджи">
               </a>
               <div class="social">
                 <ul class="social__list">
                   <li class="social__item">
-                    <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+                    <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">
+                      <svg class="social__svg social__svg--vk" width="22" height="12">
+                        <use xlink:href="./img/sprite.svg#icon-vk-mobile"></use>
+                      </svg>
+                    </a>
                   </li>
                   <li class="social__item">
-                    <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+                    <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
+                      <svg class="social__svg social__svg--insta" width="17" height="17">
+                        <use xlink:href="./img/sprite.svg#icon-insta-mobile"></use>
+                      </svg>
+                    </a>
                   </li>
                   <li class="social__item">
-                    <a class="social__link social__link--fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+                    <a class="social__link social__link--fb" href="https://www.facebook.com/htmlacademy">
+                      <svg class="social__svg social__svg--fb" width="10" height="19">
+                        <use xlink:href="./img/sprite.svg#icon-fb-mobile"></use>
+                      </svg>
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -136,14 +148,19 @@
                 <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
                 </a>
                 <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
-                  <img src="#" alt="Логотип HTML-Академии">
+                  <svg class="copyright__svg" width="27" height="34">
+                    <use xlink:href="./img/sprite.svg#htmlacademy"></use>
+                  </svg>
                 </a>
               </div>
             </div>
           </footer>
+
         </div>
       </body>
     </html>
 
+    <script src="js/vendors.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
