@@ -1,6 +1,8 @@
 .show-more {
   height: 210px;
   margin-top: 15px;
+  border-top: solid rgba(17, 17, 17, 0.1) 1px;
+  border-bottom: solid rgba(17, 17, 17, 0.1) 1px;
 }
 
 .show-more__header {
@@ -19,9 +21,15 @@
 }
 
 .show-more__header::before {
-  content: "";
   position: absolute;
-  background-image: url("../img/advantage-leaf@1x.png");
+  content: "";
+  background-image: url("../img/icon-plus-mobile.svg");
+  background-repeat: no-repeat;
+  width: 31px;
+  height: 31px;
+  top: 27px;
+  left: 45%;
+  opacity: 0.2;
 }
 
 .show-more__description {
