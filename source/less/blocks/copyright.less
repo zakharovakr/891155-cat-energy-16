@@ -1,3 +1,44 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+}
+
+@media (min-width: @tablet-width) {
+  .copyright {
+    justify-content: flex-end;
+  }
+}
+
 .copyright__link {
   .link-reset();
+  font-family: @font-family-arial;
+  font-size: 16px;
+  line-height: 1;
+  color: #444444;
+}
+
+@media (min-width: @tablet-width) {
+  .copyright__link {
+    margin-right: 23px;
+  }
+}
+
+.copyright__svg {
+  fill: #666666;
+}
+
+.copyright__svg:hover {
+  fill: #68b738;
+}
+
+.copyright__svg:focus {
+  fill: #68b738;
+}
+
+.copyright__svg:active {
+  fill: #68b738;
+  opacity: 0.3;
 }

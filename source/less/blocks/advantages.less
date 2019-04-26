@@ -5,6 +5,7 @@
 .advantages__title {
   .section-title-mobile();
 }
+
 @media (min-width: @tablet-width) {
   .advantages__title {
     .section-title-tablet();
@@ -14,6 +15,7 @@
 .advantages__list {
   .list-reset();
 }
+
 @media (min-width: @tablet-width) {
   .advantages__list {
     display: flex;
@@ -22,50 +24,57 @@
     justify-content: space-between;
   }
 }
+
 @media (min-width: @desktop-width) {
   .advantages__list {
-    flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
   }
 }
 
 .advantages__item {
+  display: flex;
+  align-items: center;
   width: 100%;
   margin-left: 0;
   margin-bottom: 20px;
   min-height: 60px;
   position: relative;
-  background-color: ;
 }
-.advantages__item::before{
+
+.advantages__item::before {
   content: "";
   display: block;
   width: 60px;
   height: 60px;
   background-color: #68b738;
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   background-repeat: no-repeat;
   background-position: center;
 }
-.advantages__item--healthy::before{
+
+.advantages__item--healthy::before {
   content: "";
-  background-image: url(../img/advantage-leaf@1x.png);
+  background-image: url("../img/advantage-leaf@1x.png");
 }
-.advantages__item--powder::before{
+
+.advantages__item--powder::before {
   content: "";
   background-image: url(../img/advantage-powder@1x.png);
 }
-.advantages__item--food::before{
+
+.advantages__item--food::before {
   content: "";
   background-image: url(../img/advantage-dining@1x.png);
 }
-.advantages__item--quick::before{
+
+.advantages__item--quick::before {
   content: "";
   background-image: url(../img/advantage-clock@1x.png);
 }
+
 @media (min-width: @tablet-width) {
   .advantages__item {
     display: block;
@@ -73,11 +82,13 @@
     width: 317px;
     margin-left: 0;
   }
-  .advantages__item::before{
+
+  .advantages__item::before {
     width: 80px;
     height: 80px;
   }
-  .advantages__item--healthy::after{
+
+  .advantages__item--healthy::after {
     content: "1";
     font-family: @font-family;
     font-size: 281px;
@@ -87,7 +98,8 @@
     left: 126px;
     z-index: -1;
   }
-    .advantages__item--powder::after{
+
+  .advantages__item--powder::after {
     content: "2";
     font-family: @font-family;
     font-size: 281px;
@@ -97,7 +109,8 @@
     left: 126px;
     z-index: -1;
   }
-    .advantages__item--food::after{
+
+  .advantages__item--food::after {
     content: "3";
     font-family: @font-family;
     font-size: 281px;
@@ -107,7 +120,8 @@
     left: 126px;
     z-index: -1;
   }
-    .advantages__item--quick::after{
+
+  .advantages__item--quick::after {
     content: "4";
     font-family: @font-family;
     font-size: 281px;
@@ -127,8 +141,8 @@
   padding: 0;
   margin-left: 80px;
   padding-top: 5px;
-  background-color: antiquewhite;//тут надо понять, как выровнять этот текст по центру!
 }
+
 @media (min-width: @tablet-width) {
   .advantages__description {
     font-size: 16px;
