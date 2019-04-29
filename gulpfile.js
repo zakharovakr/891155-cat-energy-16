@@ -23,6 +23,7 @@ const objectFitImages = require('postcss-object-fit-images');
 const babel = require("gulp-babel");
 const uglify = require('gulp-uglify');
 const concat = require("gulp-concat");
+const imagemin = require("gulp-imagemin");
 
 const isDevelopment = !process.env.NODE_ENV || process.env.NODE_ENV === 'development';
 
@@ -121,6 +122,16 @@ gulp.task('sprite', () => {
       )
       .pipe(rename('sprite.svg'))
       .pipe(gulp.dest('build/img'))
+});
+
+gulp.task("images", function () {
+  return gulp.src("source/img/**/*.{png,jpg,svg}")
+  .pipe(imagemin([
+    imagemin.optipng({optimizationLevel: 3}),
+    imagemin.jpegtran({progressive: true}),
+    imagemin.svgo() 
+  ]))
+  .pipe(gulp.dest("source/img")); 
 });
 
 gulp.task('watch', () => {
