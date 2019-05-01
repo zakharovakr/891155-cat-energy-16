@@ -2,6 +2,12 @@
   .container();
 }
 
+@media (min-width: @tablet-width) {
+  .extra {
+    margin-top: -70px;
+  }
+}
+
 .extra__title {
   display: block;
   font-family: @font-family;
@@ -23,10 +29,47 @@
   right: 0;
 }
 
+@media (min-width: @tablet-width) {
+  .extra__title {
+    font-size: 36px;
+    padding-left: 30px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .extra__title::after {
+    position: absolute;
+    content: "";
+    width: 315px;
+    height: 3px;
+    background: #68b738;
+    top: 60%;
+    right: 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .extra__title::before {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 3px;
+    background: #68b738;
+    top: 60%;
+    left: -30px;
+  }
+}
+
 .extra__list {
   .list-reset();
   display: flex;
   flex-direction: column;
+}
+
+@media (min-width: @tablet-width) {
+  .extra__list {
+    border: solid rgba(17, 17, 17, 0.1) 1px;
+  }
 }
 
 .extra__element {
@@ -34,8 +77,29 @@
   border-top: solid rgba(17, 17, 17, 0.1) 1px;
 }
 
+@media (min-width: @tablet-width) {
+  .extra__element {
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .extra__element--vitamins {
   border-bottom: solid rgba(17, 17, 17, 0.1) 1px;
+}
+
+@media (min-width: @tablet-width) {
+  .extra__element--sugar {
+    border-top: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .extra__element--vitamins {
+    border-bottom: none;
+  }
 }
 
 .extra__element-title {
@@ -50,10 +114,25 @@
   padding-bottom: 15px;
 }
 
+@media (min-width: @tablet-width) {
+  .extra__element-title {
+    font-size: 20px;
+    width: 50%;
+  }
+}
+
 .extra__element-table {
   font-family: @font-family-arial;
   font-size: 14px;
   line-height: 1;
+}
+
+@media (min-width: @tablet-width) {
+  .extra__element-table {
+    font-size: 16px;
+    line-height: 1.25;
+    width: 50%;
+  }
 }
 
 .extra__button {
@@ -70,4 +149,10 @@
   border: none;
   margin: 0 auto;
   margin-top: 14px;
+}
+
+@media (min-width: @tablet-width) {
+  .extra__button {
+    width: 633px;
+  }
 }

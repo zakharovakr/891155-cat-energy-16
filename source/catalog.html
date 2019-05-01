@@ -51,7 +51,7 @@
                   <span class="catalog__description-title">Cat Energy <br> PRO 500 г
                 </span>
                 <table class="catalog__table">
-                  <tr>
+                  <tr class="catalog__table-row">
                     <td>Объем</td>
                     <td class="table-data-right">500 г</td>
                   </tr>
@@ -159,7 +159,7 @@
                   <span class="catalog__description-title">Cat Energy <br> SLIM 500 г
                 </span>
                 <table class="catalog__table">
-                  <tr>
+                  <tr class="catalog__table-row">
                     <td>Объем</td>
                     <td class="table-data-right">500 г</td>
                   </tr>
@@ -230,15 +230,15 @@
                 <button class="button catalog__button" type="button">Заказать
                 </button>
               </li>
+              <li class="show-more">
+                  <h2 class="show-more__header">Показать еще 100500 товаров
+                    </h2>
+                    <p class="show-more__description">На самом деле вкусов гораздо больше!
+                    </p>
+                    <button class="button show-more__button"type="button">Показать все
+                    </button>
+              </li>
             </ul>
-            <div class="show-more">
-              <h2 class="show-more__header">Показать еще 100500 товаров
-              </h2>
-              <p class="show-more__description">На самом деле вкусов гораздо больше!
-              </p>
-              <button class="button show-more__button"type="button">Показать все
-              </button>
-            </div>
           </div>
         </section>
         <section class="extra">
@@ -246,7 +246,7 @@
             <span class="extra__title">Дополнительные товары
             </span>
             <ul class="extra__list">
-              <li class="extra__element">
+              <li class="extra__element extra__element--sugar">
                 <span class="extra__element-title">Сахарозаменитель
                 </span>
                 <table class="extra__element-table">
@@ -303,16 +303,19 @@
         </section>
 
         <section class="contacts">
-          <div class="contacts__container">
             <div class="contacts__text">
               <span class="contacts__cooperation">приглашаем к сотрудничеству дилеров!
               </span>
-              <span class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+              <span class="contacts__address"><span>ул. Большая Конюшенная, д. 19/8</span> <span>Санкт-Петербург</span>
               </span>
             </div>
-            <div id="map" class="map">
+            <div id="map" class="map contacts_map">
             </div>
-          </div>
+              <picture class="map__image">
+                  <source media="(min-width: 1200px)" srcset="./img/bg-map-desktop@1x.png 1x, ./img/bg-map-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="./img/bg-map-tablet@1x.png 1x, ./img/bg-map-tablet@2x.png 2x">
+                  <img src="./img/bg-map-mobile@1x.png" srcset="./img/bg-map-desktop@2x.png 2x" width="100%" height="100%">
+              </picture>
         </section>
       </main>
 
@@ -360,7 +363,7 @@
         </div>
       </footer>
       
-      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYLSBYQCT3uJc_SB7iR-xhAExmrywuc6o"></script>
+      <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp"></script>
       <script src="./js/map.js"></script>
 
 
