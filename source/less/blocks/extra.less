@@ -60,6 +60,34 @@
   }
 }
 
+@media (min-width: @desktop-width) {
+  .extra__title {
+    padding-left: 0;
+    margin-bottom: 75px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .extra__title::after {
+    position: absolute;
+    content: "";
+    width: 750px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .extra__title::before {
+    width: 80px;
+    left: -110px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .extra__wrapper {
+    display: flex;
+  }
+}
+
 .extra__list {
   .list-reset();
   display: flex;
@@ -72,17 +100,44 @@
   }
 }
 
+@media (min-width: @desktop-width) {
+  .extra__list {
+    border: solid rgba(17, 17, 17, 0.1) 1px;
+    border-left: none;
+    border-right: none;
+    width: 855px;
+  }
+}
+
 .extra__element {
   height: 130px;
   border-top: solid rgba(17, 17, 17, 0.1) 1px;
 }
 
+.extra__element-table--right {
+  text-align: right;
+}
+
 @media (min-width: @tablet-width) {
   .extra__element {
+    height: 140px;
     padding-left: 40px;
     padding-right: 40px;
+    padding-top: 28px;
+    padding-bottom: 28px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .extra__element {
+    flex-wrap: nowrap;
+    height: 70px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -118,6 +173,13 @@
   .extra__element-title {
     font-size: 20px;
     width: 50%;
+    padding-top: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .extra__element-title {
+    width: 33%;
   }
 }
 
@@ -131,7 +193,15 @@
   .extra__element-table {
     font-size: 16px;
     line-height: 1.25;
-    width: 50%;
+    width: 250px;
+    text-align: right;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .extra__element-table {
+    width: 33%;
+    text-align: left;
   }
 }
 
@@ -154,5 +224,14 @@
 @media (min-width: @tablet-width) {
   .extra__button {
     width: 633px;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .extra__button {
+    width: 245px;
+    margin: 0;
+    float: right;
   }
 }

@@ -150,22 +150,11 @@
     margin: 0;
     border: none;
   }
+}
 
-  .main-nav__item--active {
-    position: relative;
-
-    &::after {
-      content: "";
-
-      position: absolute;
-      right: 0;
-      bottom: -5px;
-      left: 0;
-
-      height: 3px;
-
-      background: #5eaa2f;
-    }
+@media (min-width: @tablet-width) {
+  .main-nav__item--active .main-nav__text {
+    border-bottom: 2px solid white; //временно для работы, реальный цвет #68b738
   }
 }
 
