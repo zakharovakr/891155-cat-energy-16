@@ -1,0 +1,40 @@
+.button {
+  background-color: #68b738;
+  font-size: 16px;
+  font-family: @font-family;
+  line-height: 1.25;
+  color: #ffffff;
+  text-transform: uppercase;
+  display: block;
+  width: 280px;
+  height: 40px;
+  text-align: center;
+  border: none;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #5eaa2f;
+}
+
+.button:focus {
+  background-color: #5eaa2f;
+}
+
+.button:active {
+  background-color: #5eaa2f;
+  opacity: 0.3;
+}
+
+@media (min-width: @tablet-width) {
+  .button {
+    width: 249px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .button {
+    width: 169px;
+  }
+}

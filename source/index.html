@@ -12,14 +12,16 @@
     <div class="page__wrapper">
       <header class="page-header">
         <div class="page-header__container">
+          <div class="page-header__wrapper">
           <a class="page-header__logo">
             <picture>
                 <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
                 <img src="img/logo-mobile.svg" class="page-header__logo-image" width="191" height="39" alt="Кэт Энерджи">
               </picture>
           </a>
-          <nav class="main-nav main-nav--opened main-nav--nojs">
-            <button class="button main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
+          <nav class="main-nav main-nav--opened">
+            <button class="burger main-nav__toggler" aria-label="Показать главное меню">
+              <span></span>
             </button>
             <div class="main-nav__wrapper">
               <ul class="main-nav__list">
@@ -29,28 +31,40 @@
                   </a>
                 </li>
                 <li class="main-nav__item">
-                  <a class="main-nav__link" href="./catalog.html">Каталог продукции</a>
+                  <a class="main-nav__link" href="./catalog.html">
+                    <span class="main-nav__text">Каталог продукции</span>
+                  </a>
                 </li>
                 <li class="main-nav__item">
-                  <a class="main-nav__link" href="./form.html">Подбор программы</a>
+                  <a class="main-nav__link" href="./form.html">
+                    <span class="main-nav__text">Подбор программы</span>
+                  </a>
                 </li>
               </ul>
             </div>
           </nav>
         </div>
+          <section class="main-info">
+              <div class="main-info__container">
+                <div>
+                    <h1 class="main-info__title">Функциональное питание для котов
+                    </h1>
+                    <span class="main-info__description">Занялся собой, займись котом!
+                    </span>
+                </div>
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="./img/index-can-desktop@1x.png 1x, ./img/index-can-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="./img/index-can-tablet@1x.jpg 1x, ./img/index-can-tablet@2x.jpg 2x">
+                  <img src="./img/index-can-mobile@1x.png" srcset="./img/index-can-mobile@2x.png 2x" class="main-info__img" alt="Питание для котов Cat Energy">
+                </picture>
+                <button class="button main-info__button" type="button">Подобрать программу
+                </button>
+              </section>
+        </div>
       </header>
 
       <main class="page-main">
-        <section class="main-info">
-          <div class="main-info__container">
-            <h1 class="main-info__title">Функциональное питание для котов
-            </h1>
-            <span class="main-info__description">Занялся собой, займись котом!
-            </span>
-            <img class="main-info__img" src="https://via.placeholder.com/280x270" alt="Кэт Энерджи">
-            <button class="button main-info__button" type="button">Подобрать программу
-            </button>
-          </section>
+        
           <section class="choose-program">
             <div class="choose-program__container">
               <h2 class="visually-hidden">Выберите программу похудения</h2>
@@ -205,6 +219,8 @@
         </div>
       </footer>
     </div>
+
+    <script src="js/main-nav.js"></script>
 
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp"></script>
     <script src="./js/map.js"></script>
