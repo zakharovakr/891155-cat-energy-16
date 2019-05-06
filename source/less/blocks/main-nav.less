@@ -22,6 +22,7 @@
   .main-nav {
     height: 113px;
     width: 50%;
+    color: #ffffff;
   }
 }
 
@@ -168,7 +169,7 @@
   }
 }
 
-@media (max-width: @tablet-width) {
+@media (max-width: @mobile-width-only) {
   .js .main-nav__list {
     max-height: 0;
     overflow: hidden;
@@ -185,6 +186,13 @@
   .main-nav__item--active .main-nav__text {
     padding-bottom: 10px;
     border-bottom: 2px solid #68b738;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__item--active .main-nav__text {
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ffffff;
   }
 }
 
