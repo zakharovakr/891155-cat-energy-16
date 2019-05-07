@@ -119,29 +119,31 @@
             </h2>
             <p class="real-example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
             </p>
-            <div class="real-example__data">
-              <div class="real-example__tables">
-                <table class="real-example__table">
-                  <tr>
-                    <td class="real-example__td1">5 кг</td>
-                  </tr>
-                  <tr>
-                    <td class="real-example__td2">снижение веса</td>
-                  </tr>
-                </table>
-                <table>
-                  <tr>
-                    <td class="real-example__td1">60 дней</td>
-                  </tr>
-                  <tr>
-                    <td class="real-example__td2">затрачено времени</td>
-                  </tr>
-                </table>
-              </div>
-              <span class="real-example__data-cost">Затраты на питание: 15 000 руб.
-              </span>
+            <div class="real-example__wrapper">
+                <div class="real-example__data">
+                    <div class="real-example__results"> 
+                      <span class="real-example__number">5 кг</span>
+                      <span class="real-example__done real-example__done--weight">снижение веса</span>
+                    </div>
+                    <div class="real-example__results"> 
+                      <span class="real-example__number">60 дней</span>
+                      <span class="real-example__done">затрачено времени</span>
+                    </div>
+                  </div>
+                  <span class="real-example__cost">Затраты на питание: 15 000 руб.
+                    </span>
+                  </div>
             </div>
-            <img class="real-example__img" src="http://placehold.it/150x100">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="./img/before-desktop@1x.png 1x, ./img/before-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="./img/before-tablet@1x.png 1x, ./img/before-tablet@2x.png 2x">
+              <img src="./img/before-mobile@1x.png" srcset="./img/before-mobile@2x.png 2x" class="real-example__before" alt="Кот Борис до приема Cat Energy">
+            </picture>
+            <picture>
+              <source media="(min-width: 1200px)" srcset="./img/after-desktop@1x.png 1x, ./img/after-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="./img/after-tablet@1x.png 1x, ./img/after-tablet@2x.png 2x">
+              <img src="./img/before-mobile@1x.png" srcset="./img/after-mobile@2x.png 2x" class="real-example__after" alt="Кот Борис после приема Cat Energy">
+            </picture>
             <div class="range-controls">
               <div class="scale">
                 <div class="bar"></div>
