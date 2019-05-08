@@ -24,6 +24,21 @@
   z-index: 1;
 }
 
+@media (min-width: @tablet-width) {
+  .order-all {
+    border: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .order-all {
+    width: 245px;
+    height: 289px;
+    margin: 0;
+    margin-left: 60px;
+  }
+}
+
 .order-all__description {
   font-family: @font-family-arial;
   font-size: 16px;
@@ -34,12 +49,4 @@
   padding-top: 190px;
   text-align: center;
   width: 159px;
-}
-
-.extra__element-table {
-  width: 100%;
-}
-
-.extra__element-table--right {
-  text-align: right;
 }
