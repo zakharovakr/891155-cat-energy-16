@@ -26,7 +26,7 @@
     "gulp-svg-sprite": "^1.5.0",
     "gulp-uglify": "^3.0.2",
     "postcss-object-fit-images": "^1.1.2",
-    "stylelint": "9.10.x",
+    "stylelint": "15.10.x",
     "stylelint-config-htmlacademy": "0.1.x"
   },
   "dependencies": {
